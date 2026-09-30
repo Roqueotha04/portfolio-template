@@ -1,5 +1,6 @@
 import type { IconType } from "react-icons";
 import { FaJava, FaAws } from "react-icons/fa";
+import { TbBrandCSharp } from "react-icons/tb";
 import {
   SiTypescript,
   SiJavascript,
@@ -26,6 +27,7 @@ import {
   SiSonarqubeserver,
   SiOwasp,
   SiMercadopago,
+  SiDotnet,
 } from "react-icons/si";
 
 export type Tech = {
@@ -43,11 +45,15 @@ const COPPER = "#a87a42";
 export const TECH: Record<string, Tech> = {
   // Languages
   java: { slug: "java", label: "Java", icon: FaJava, color: "#ED8B00" },
+  csharp: { slug: "csharp", label: "C#", icon: TbBrandCSharp, color: "#512BD4" },
   sql: { slug: "sql", label: "SQL", icon: null, color: COPPER },
   typescript: { slug: "typescript", label: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   javascript: { slug: "javascript", label: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
 
   // Backend
+  dotnet: { slug: "dotnet", label: ".NET", icon: SiDotnet, color: "#512BD4" },
+  aspnet: { slug: "aspnet", label: "ASP.NET Core", icon: null, color: "#512BD4" },
+  efcore: { slug: "efcore", label: "Entity Framework", icon: null, color: "#512BD4" },
   maven: { slug: "maven", label: "Maven", icon: SiApachemaven, color: "#C71A36" },
   springboot: { slug: "springboot", label: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
   springdata: { slug: "springdata", label: "Spring Data", icon: SiSpring, color: "#6DB33F" },
@@ -101,10 +107,10 @@ export type StackCategory = {
 
 /** Stack section content: exactly the 6 categories requested. */
 export const STACK: StackCategory[] = [
-  { label: "Languages", items: ["java", "sql", "typescript", "javascript"] },
+  { label: "Languages", items: ["java", "csharp", "sql", "typescript", "javascript"] },
   {
     label: "Backend",
-    items: ["maven", "springboot", "springdata", "hibernate", "springsecurity", "jwt"],
+    items: ["dotnet", "aspnet", "efcore", "maven", "springboot", "springdata", "hibernate", "springsecurity", "jwt"],
   },
   { label: "Frontend", items: ["nextjs", "react", "angular", "html5", "css", "tailwind"] },
   { label: "Databases", items: ["mysql", "postgresql", "supabase"] },

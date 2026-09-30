@@ -4,7 +4,6 @@ import type { Localized } from "./i18n";
 export const PROFILE = {
   name: "Roque Othacehe",
   role: { es: "Fullstack Developer", en: "Fullstack Developer" } as Localized,
-  specialization: "Spring Boot & Next.js Developer",
   location: { es: "Mar del Plata, Argentina", en: "Mar del Plata, Argentina" } as Localized,
   email: "roqueotha04@gmail.com",
   whatsapp: "https://wa.me/5492236680996",
@@ -33,7 +32,7 @@ export const HERO = {
   downloadCv: { es: "Descargar CV", en: "Download CV" } as Localized,
   githubBtn: "GitHub",
   linkedinBtn: "LinkedIn",
-  marqueeTech: ["java", "springboot", "nextjs", "react", "postgresql", "docker", "aws"],
+  marqueeTech: ["java", "dotnet", "springboot", "nextjs", "react", "postgresql", "docker", "aws"],
 };
 
 /* ── About ────────────────────────────────────────────────────────── */
@@ -141,17 +140,17 @@ export const PROJECTS: Project[] = [
     description: {
       es: [
         "Sistema de gestión interno para una empresa de internación domiciliaria, centralizando pacientes, personal de salud, turnos e incidencias operativas, con alertas en tiempo real ante ausencias y retrasos.",
-        "Incluye una web pública en Next.js conectada al sistema, construido end-to-end con Java, Spring Boot y AWS.",
+        "Incluye una web pública en Next.js conectada al sistema, construido end-to-end con .NET. La API está desarrollada en ASP.NET Core, con C# y Entity Framework Core, desplegada en AWS.",
       ],
       en: [
         "Internal management system for a home-hospitalization company, centralizing patients, healthcare staff, shifts, and operational incidents, with real-time alerts for absences and delays.",
-        "Includes a public website built in Next.js connected to the system, developed end-to-end with Java, Spring Boot, and AWS.",
+        "Includes a public website built in Next.js connected to the system, built end-to-end with .NET. The API is developed in ASP.NET Core, with C# and Entity Framework Core, deployed on AWS.",
       ],
     },
     links: [
       { label: { es: "Ver avisalud.com.ar →", en: "Visit avisalud.com.ar →" }, url: "https://avisalud.com.ar" },
     ],
-    tech: ["nextjs", "java", "springboot", "springsecurity", "postgresql", "aws"],
+    tech: ["nextjs", "csharp", "dotnet", "aspnet", "efcore", "postgresql", "aws"],
     images: ["/projects/Avi Salud 2.webp"],
     note: {
       es: "El enlace corresponde a la web pública; el sistema de gestión (turnos, personal, insumos, balance) es interno.",
@@ -264,27 +263,26 @@ export const PROJECTS: Project[] = [
     images: ["/projects/SuperHeroGame.webp"],
   },
   {
-    id: "book-loan",
-    title: "Book Loan System",
+    id: "appointments-demo",
+    title: "Appointments Demo",
     description: {
       es: [
-        "Sistema de gestión de préstamos bibliotecarios. API REST diseñada bajo Clean Architecture con un fuerte enfoque en la integridad de datos y seguridad. Implementa Role-Based Access Control (RBAC) con Spring Security 6 para la gestión de permisos diferenciados entre administradores, bibliotecarios y usuarios.",
-        "Proyecto orientado a altos estándares de calidad de software: cuenta con cobertura de tests unitarios superior al 80% (JaCoCo), validaciones de negocio estrictas mediante Bean Validation y documentación técnica interactiva con Swagger/OpenAPI.",
+        "Sistema de gestión de turnos para peluquerías. Monorepo con el frontend en Angular y el backend en .NET, ambos en el mismo repositorio.",
+        "La API en ASP.NET Core está organizada en capas — Domain, Application, Infrastructure y Api — con documentación en Swagger.",
       ],
       en: [
-        "Library loan management system. REST API designed under Clean Architecture with a strong focus on data integrity and security. Implements Role-Based Access Control (RBAC) with Spring Security 6 to manage permissions for admins, librarians, and users.",
-        "Project oriented towards high software quality standards: features unit test coverage exceeding 80% (JaCoCo), strict business validations using Bean Validation, and interactive technical documentation with Swagger/OpenAPI.",
+        "Appointment management system for hair salons. Monorepo with an Angular frontend and a .NET backend, both in the same repository.",
+        "The ASP.NET Core API is organized in layers — Domain, Application, Infrastructure, and Api — with Swagger documentation.",
       ],
     },
     links: [
-      { label: { es: "Explorar en Github →", en: "Explore on Github →" }, url: "https://github.com/Roqueotha04/book-loan-system" },
+      {
+        label: { es: "Explorar en Github →", en: "Explore on Github →" },
+        url: "https://github.com/Roqueotha04/appointments-demo",
+      },
     ],
-    tech: ["java", "springboot", "springsecurity", "mysql", "junit", "docker"],
-    images: ["/projects/Book-Loan.webp"],
-    note: {
-      es: "Nota: la Swagger UI puede consultarse en /swagger-ui.html al desplegar el código localmente.",
-      en: "Note: Swagger UI can be accessed at /swagger-ui.html when deploying the code locally.",
-    },
+    tech: ["angular", "csharp", "dotnet", "aspnet"],
+    images: ["/appointments demo.png"],
   },
 ];
 

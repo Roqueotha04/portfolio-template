@@ -60,10 +60,6 @@ export function Hero() {
               <span className="font-display text-xl font-medium text-txt-primary sm:text-2xl">
                 {t(PROFILE.role)}
               </span>
-              <span className="hidden text-copper sm:inline">/</span>
-              <span className="font-mono text-sm text-txt-muted sm:text-base">
-                {PROFILE.specialization}
-              </span>
             </motion.div>
 
             <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-3">

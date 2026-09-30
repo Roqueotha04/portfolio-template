@@ -1,9 +1,9 @@
 "use client";
 
-import { SiSpring, SiNextdotjs } from "react-icons/si";
+import { SiSpring, SiNextdotjs, SiPostgresql, SiDotnet } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { useLang } from "@/components/providers/LanguageProvider";
-import { ABOUT } from "@/lib/content";
+import { ABOUT, PROFILE } from "@/lib/content";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/ui/Reveal";
 import { renderHighlighted } from "@/lib/highlight";
@@ -56,12 +56,18 @@ export function About() {
               {/* accent glow */}
               <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#6DB33F]/10 blur-3xl" />
 
-              <div className="relative flex items-center gap-3">
+              <div className="relative flex flex-wrap items-center gap-3">
                 <span className="flex h-14 w-14 items-center justify-center rounded-xl border border-line bg-[#6DB33F]/10 text-[#6DB33F]">
                   <SiSpring size={30} />
                 </span>
                 <span className="flex h-14 w-14 items-center justify-center rounded-xl border border-line bg-white/[0.03] text-txt-primary">
                   <SiNextdotjs size={28} />
+                </span>
+                <span className="flex h-14 w-14 items-center justify-center rounded-xl border border-line bg-[#4169E1]/10 text-[#4169E1]">
+                  <SiPostgresql size={28} />
+                </span>
+                <span className="flex h-14 w-14 items-center justify-center rounded-xl border border-line bg-[#512BD4]/10 text-[#512BD4]">
+                  <SiDotnet size={28} />
                 </span>
                 <span className="flex h-14 w-14 items-center justify-center rounded-xl border border-line bg-[#FF9900]/10 text-[#FF9900]">
                   <FaAws size={30} />
@@ -69,7 +75,7 @@ export function About() {
               </div>
 
               <p className="relative mt-6 font-display text-2xl font-semibold text-txt-primary">
-                Spring Boot &amp; Next.js
+                {t(PROFILE.role)}
               </p>
               <p className="relative mt-2 max-w-xs text-sm leading-relaxed text-txt-muted">
                 {t({

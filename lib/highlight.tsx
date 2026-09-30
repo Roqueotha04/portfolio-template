@@ -4,8 +4,13 @@ import { Fragment, type ReactNode } from "react";
 const KEYWORDS = [
   "arquitecturas escalables",
   "scalable architectures",
+  "Entity Framework Core",
+  "ASP.NET Core",
   "Spring Security",
   "Spring Boot",
+  "Angular",
+  ".NET",
+  "C#",
   "Mercado Pago",
   "Claude Code",
   "Tienda Nube",

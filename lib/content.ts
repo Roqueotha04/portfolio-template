@@ -12,7 +12,7 @@ export const PROFILE = {
   linkedin: "https://linkedin.com/in/roque-othacehe-a15085243",
   studio: "https://estudiove.com",
   photo: "/me/me.jpeg",
-  cv: { es: "/Cv - Roque Othacehe.docx.pdf", en: "/Cv - Roque Othacehe.docx.pdf" } as Localized,
+  cv: { es: "/Cv - Roque Othacehe.pdf", en: "/Cv - Roque Othacehe.pdf" } as Localized,
 };
 
 /* ── Navbar ───────────────────────────────────────────────────────── */
